@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="AssembleeGame" InternalType="Console">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="main.cpp"/>
+    <VirtualDirectory Name="Engine">
+      <File Name="AudioSystem.cpp"/>
+      <File Name="AudioSystem.h"/>
+      <File Name="Core.cpp"/>
+      <File Name="Core.h"/>
+      <File Name="Engine.h"/>
+      <File Name="GameFramework.cpp"/>
+      <File Name="GameFramework.h"/>
+      <File Name="GameState.h"/>
+      <File Name="StateManager.cpp"/>
+      <File Name="StateManager.h"/>
+      <File Name="TextureManager.cpp"/>
+      <File Name="TextureManager.h"/>
+      <File Name="VideoSystem.cpp"/>
+      <File Name="VideoSystem.h"/>
+      <File Name="DisplayListManager.cpp"/>
+      <File Name="DisplayListManager.h"/>
+      <File Name="SelectionManager.cpp"/>
+      <File Name="SelectionManager.h"/>
+      <File Name="SelectionObject.cpp"/>
+      <File Name="SelectionObject.h"/>
+      <File Name="RandomNumberGenerator.cpp"/>
+      <File Name="RandomNumberGenerator.h"/>
+      <File Name="ScriptingSystem.cpp"/>
+      <File Name="ScriptingSystem.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Game">
+      <VirtualDirectory Name="Models">
+        <File Name="Model.h"/>
+        <File Name="Model.cpp"/>
+        <File Name="WallModel.cpp"/>
+        <File Name="WallModel.h"/>
+        <File Name="FloorModel.cpp"/>
+        <File Name="FloorModel.h"/>
+        <File Name="CeilingModel.cpp"/>
+        <File Name="CeilingModel.h"/>
+        <File Name="DoorFrameModel.cpp"/>
+        <File Name="DoorFrameModel.h"/>
+        <File Name="DoorModel.cpp"/>
+        <File Name="DoorModel.h"/>
+        <File Name="HoleModel.cpp"/>
+        <File Name="HoleModel.h"/>
+        <File Name="PressurePlateModel.cpp"/>
+        <File Name="PressurePlateModel.h"/>
+        <File Name="Models.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="States">
+        <File Name="DungeonCrawlingState.h"/>
+        <File Name="DungeonCrawlingState.cpp"/>
+        <VirtualDirectory Name="User Interface">
+          <File Name="HealthPot.h"/>
+          <File Name="HealthPot.cpp"/>
+          <File Name="Cursor.h"/>
+          <File Name="Cursor.cpp"/>
+          <File Name="InventoryBar.h"/>
+          <File Name="InventorySlot.h"/>
+          <File Name="InventoryBar.cpp"/>
+          <File Name="InventorySlot.cpp"/>
+          <File Name="TurnStone.h"/>
+          <File Name="TurnStone.cpp"/>
+          <File Name="UserInterface.h"/>
+          <File Name="UserInterface.cpp"/>
+          <File Name="Tooltip.h"/>
+          <File Name="Tooltip.cpp"/>
+          <File Name="TextRenderer.h"/>
+          <File Name="TextRenderer.cpp"/>
+          <File Name="Font.h"/>
+          <File Name="Font.cpp"/>
+          <File Name="TextWindow.cpp"/>
+          <File Name="TextWindow.h"/>
+          <File Name="Menu.cpp"/>
+          <File Name="Menu.h"/>
+          <File Name="GameOverScreen.cpp"/>
+          <File Name="GameOverScreen.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Map">
+          <File Name="Map.h"/>
+          <File Name="Map.cpp"/>
+          <File Name="DoorTile.h"/>
+          <File Name="DoorTile.cpp"/>
+          <File Name="FloorTile.h"/>
+          <File Name="FloorTile.cpp"/>
+          <File Name="Item.h"/>
+          <File Name="Item.cpp"/>
+          <File Name="Monster.h"/>
+          <File Name="Monster.cpp"/>
+          <File Name="Tile.h"/>
+          <File Name="Tile.cpp"/>
+          <File Name="WallTile.h"/>
+          <File Name="WallTile.cpp"/>
+          <File Name="Player.h"/>
+          <File Name="Player.cpp"/>
+          <File Name="SecretWallTile.cpp"/>
+          <File Name="SecretWallTile.h"/>
+          <File Name="HoleTile.cpp"/>
+          <File Name="HoleTile.h"/>
+          <File Name="PressurePlateTile.cpp"/>
+          <File Name="PressurePlateTile.h"/>
+          <VirtualDirectory Name="tolua Bindings">
+            <File Name="tolua_Monster.cpp"/>
+            <File Name="tolua_Monster.h"/>
+            <File Name="tolua_Map.cpp"/>
+            <File Name="tolua_Map.h"/>
+            <File Name="tolua_Item.cpp"/>
+            <File Name="tolua_Item.h"/>
+            <File Name="tolua_DoorTile.cpp"/>
+            <File Name="tolua_DoorTile.h"/>
+            <File Name="tolua_PressurePlateTile.cpp"/>
+            <File Name="tolua_PressurePlateTile.h"/>
+            <File Name="tolua_HoleTile.cpp"/>
+            <File Name="tolua_HoleTile.h"/>
+            <File Name="tolua_Player.cpp"/>
+            <File Name="tolua_Player.h"/>
+          </VirtualDirectory>
+          <File Name="MapTransitionTile.cpp"/>
+          <File Name="MapTransitionTile.h"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Game">
+          <File Name="Attack.h"/>
+          <File Name="Attack.cpp"/>
+          <File Name="AttackFeedback.h"/>
+          <File Name="AttackFeedback.cpp"/>
+          <File Name="AttackResult.h"/>
+          <File Name="Defense.h"/>
+          <File Name="AttackResult.cpp"/>
+          <File Name="Defense.cpp"/>
+          <File Name="DefenseResult.cpp"/>
+          <File Name="DefenseResult.h"/>
+          <VirtualDirectory Name="tolua Bindings">
+            <File Name="tolua_Attack.cpp"/>
+            <File Name="tolua_Attack.h"/>
+            <File Name="tolua_GameController.cpp"/>
+            <File Name="tolua_GameController.h"/>
+            <File Name="tolua_Defense.cpp"/>
+            <File Name="tolua_Defense.h"/>
+          </VirtualDirectory>
+          <File Name="DefenseFeedback.cpp"/>
+          <File Name="DefenseFeedback.h"/>
+          <File Name="GameController.h"/>
+          <File Name="GameController.cpp"/>
+        </VirtualDirectory>
+        <File Name="MainMenuState.cpp"/>
+        <File Name="MainMenuState.h"/>
+        <File Name="GameOverState.cpp"/>
+        <File Name="GameOverState.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Util">
+        <File Name="GlobalConstants.h"/>
+        <File Name="BoundingBox.h"/>
+        <File Name="BoundingBox.cpp"/>
+        <File Name="LinearInterpolator.h"/>
+        <File Name="LinearInterpolator.cpp"/>
+        <File Name="Vector.h"/>
+        <File Name="Vector.cpp"/>
+        <File Name="AlphaObject.h"/>
+        <File Name="AlphaObject.cpp"/>
+        <File Name="toluaBindings.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Events">
+        <File Name="EventManager.h"/>
+        <File Name="EventManager.cpp"/>
+        <File Name="Event.cpp"/>
+        <File Name="Event.h"/>
+        <File Name="MovePlayerEvent.cpp"/>
+        <File Name="MovePlayerEvent.h"/>
+        <File Name="Events.h"/>
+        <File Name="TurnPlayerEvent.cpp"/>
+        <File Name="TurnPlayerEvent.h"/>
+        <File Name="AttackAnimationEvent.cpp"/>
+        <File Name="AttackAnimationEvent.h"/>
+        <File Name="PlayerAttackEvent.cpp"/>
+        <File Name="PlayerAttackEvent.h"/>
+        <File Name="MonsterAttackEvent.cpp"/>
+        <File Name="MonsterAttackEvent.h"/>
+        <File Name="SetTooltipVisibilityEvent.h"/>
+        <File Name="SetTooltipVisibilityEvent.cpp"/>
+        <File Name="PlayerDamageEvent.cpp"/>
+        <File Name="PlayerDamageEvent.h"/>
+        <File Name="MonsterMoveEvent.cpp"/>
+        <File Name="MonsterMoveEvent.h"/>
+        <File Name="ActivateDoorEvent.cpp"/>
+        <File Name="ActivateDoorEvent.h"/>
+        <File Name="ItemDelayEvent.cpp"/>
+        <File Name="ItemDelayEvent.h"/>
+        <File Name="PlayerDefenseEvent.cpp"/>
+        <File Name="PlayerDefenseEvent.h"/>
+        <File Name="FadeInEvent.cpp"/>
+        <File Name="FadeInEvent.h"/>
+        <File Name="FadeOutEvent.cpp"/>
+        <File Name="FadeOutEvent.h"/>
+        <File Name="SetPlayerLocationEvent.cpp"/>
+        <File Name="SetPlayerLocationEvent.h"/>
+        <File Name="SetFadeColorEvent.cpp"/>
+        <File Name="SetFadeColorEvent.h"/>
+        <File Name="PlayMusicEvent.cpp"/>
+        <File Name="PlayMusicEvent.h"/>
+        <File Name="PlaySoundEvent.cpp"/>
+        <File Name="PlaySoundEvent.h"/>
+        <File Name="FadeInMusicEvent.cpp"/>
+        <File Name="FadeInMusicEvent.h"/>
+        <File Name="FadeOutMusicEvent.cpp"/>
+        <File Name="FadeOutMusicEvent.h"/>
+        <File Name="TextWindowEvent.cpp"/>
+        <File Name="TextWindowEvent.h"/>
+        <File Name="PauseGameEvent.cpp"/>
+        <File Name="PauseGameEvent.h"/>
+        <File Name="ResumeGameEvent.cpp"/>
+        <File Name="ResumeGameEvent.h"/>
+        <File Name="TutorialWindowEvent.cpp"/>
+        <File Name="TutorialWindowEvent.h"/>
+        <File Name="ClearTutorialWindowEvent.cpp"/>
+        <File Name="ClearTutorialWindowEvent.h"/>
+        <File Name="PlayerHealEvent.cpp"/>
+        <File Name="PlayerHealEvent.h"/>
+        <File Name="PlayerIncreaseVitalityEvent.cpp"/>
+        <File Name="PlayerIncreaseVitalityEvent.h"/>
+        <File Name="SetPlayerDirectionEvent.cpp"/>
+        <File Name="SetPlayerDirectionEvent.h"/>
+        <File Name="PlayerGiveItemEvent.cpp"/>
+        <File Name="PlayerGiveItemEvent.h"/>
+        <File Name="ReturnToMenuEvent.cpp"/>
+        <File Name="ReturnToMenuEvent.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Animations">
+        <File Name="Animation.cpp"/>
+        <File Name="Animation.h"/>
+        <File Name="Particle.cpp"/>
+        <File Name="Particle.h"/>
+        <File Name="FireParticle.cpp"/>
+        <File Name="FireParticle.h"/>
+        <File Name="FireSlashAnimation.cpp"/>
+        <File Name="FireSlashAnimation.h"/>
+        <File Name="Animations.h"/>
+        <File Name="TextParticle.cpp"/>
+        <File Name="TextParticle.h"/>
+        <File Name="TextAnimation.cpp"/>
+        <File Name="TextAnimation.h"/>
+        <File Name="SlashParticle.cpp"/>
+        <File Name="SlashParticle.h"/>
+        <File Name="SlashAnimation.cpp"/>
+        <File Name="SlashAnimation.h"/>
+        <File Name="SparkParticle.cpp"/>
+        <File Name="SparkParticle.h"/>
+        <File Name="ShockParticle.cpp"/>
+        <File Name="ShockParticle.h"/>
+        <File Name="ShockSlashAnimation.cpp"/>
+        <File Name="ShockSlashAnimation.h"/>
+        <File Name="PlayerNormalHitAnimation.cpp"/>
+        <File Name="PlayerNormalHitAnimation.h"/>
+        <File Name="IceSlashAnimation.cpp"/>
+        <File Name="IceSlashAnimation.h"/>
+        <File Name="IceParticle.cpp"/>
+        <File Name="IceParticle.h"/>
+        <File Name="IceBitParticle.cpp"/>
+        <File Name="IceBitParticle.h"/>
+        <File Name="AcidSlashAnimation.cpp"/>
+        <File Name="AcidSlashAnimation.h"/>
+        <File Name="AcidParticle.cpp"/>
+        <File Name="AcidParticle.h"/>
+        <File Name="SmokeParticle.cpp"/>
+        <File Name="SmokeParticle.h"/>
+        <File Name="PlayerFireHitAnimation.cpp"/>
+        <File Name="PlayerFireHitAnimation.h"/>
+        <File Name="PlayerShockHitAnimation.cpp"/>
+        <File Name="PlayerShockHitAnimation.h"/>
+        <File Name="PlayerIceHitAnimation.cpp"/>
+        <File Name="PlayerIceHitAnimation.h"/>
+        <File Name="PlayerAcidHitAnimation.cpp"/>
+        <File Name="PlayerAcidHitAnimation.h"/>
+        <File Name="PlayerTurnAnimation.cpp"/>
+        <File Name="PlayerTurnAnimation.h"/>
+        <File Name="PlayerTurnParticle.cpp"/>
+        <File Name="PlayerTurnParticle.h"/>
+        <File Name="EnemyTurnAnimation.cpp"/>
+        <File Name="EnemyTurnAnimation.h"/>
+        <File Name="EnemyTurnParticle.cpp"/>
+        <File Name="EnemyTurnParticle.h"/>
+        <File Name="PlayerHealAnimation.cpp"/>
+        <File Name="PlayerHealAnimation.h"/>
+        <File Name="PlayerHealParticle.cpp"/>
+        <File Name="PlayerHealParticle.h"/>
+        <File Name="PlayerHurtAnimation.cpp"/>
+        <File Name="PlayerHurtAnimation.h"/>
+        <File Name="PlayerHurtParticle.cpp"/>
+        <File Name="PlayerHurtParticle.h"/>
+        <File Name="PlayerDefenseAnimation.cpp"/>
+        <File Name="PlayerDefenseAnimation.h"/>
+        <File Name="PlayerDefenseParticle.cpp"/>
+        <File Name="PlayerDefenseParticle.h"/>
+        <File Name="PlayerVitalityAnimation.cpp"/>
+        <File Name="PlayerVitalityAnimation.h"/>
+        <File Name="PlayerVitalityParticle.cpp"/>
+        <File Name="PlayerVitalityParticle.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Scripts">
+        <File Name="Resources/Scripts/NewGame.lua"/>
+        <VirtualDirectory Name="Maps">
+          <File Name="Resources/Scripts/Maps/UndergroundPrisonB2F.lua"/>
+          <File Name="Resources/Scripts/Maps/Forest.lua"/>
+          <File Name="Resources/Scripts/Maps/Swamp.lua"/>
+          <File Name="Resources/Scripts/Maps/DarkPassageway1.lua"/>
+          <File Name="Resources/Scripts/Maps/DarkPassageway2.lua"/>
+          <File Name="Resources/Scripts/Maps/TowerB1F.lua"/>
+          <File Name="Resources/Scripts/Maps/Tower1F.lua"/>
+          <File Name="Resources/Scripts/Maps/Tower2F.lua"/>
+          <File Name="Resources/Scripts/Maps/HedgeMaze.lua"/>
+          <File Name="Resources/Scripts/Maps/UndergroundPrisonB3F.lua"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Monsters">
+          <File Name="Resources/Scripts/Monsters/GoblinWorker.lua"/>
+          <File Name="Resources/Scripts/Monsters/GoblinWarrior.lua"/>
+          <File Name="Resources/Scripts/Monsters/CaveWorm.lua"/>
+          <File Name="Resources/Scripts/Monsters/GiantRat.lua"/>
+          <File Name="Resources/Scripts/Monsters/GoblinShaman.lua"/>
+          <File Name="Resources/Scripts/Monsters/Ooze.lua"/>
+          <File Name="Resources/Scripts/Monsters/GoblinChieftain.lua"/>
+          <File Name="Resources/Scripts/Monsters/Guardian.lua"/>
+          <File Name="Resources/Scripts/Monsters/Jester.lua"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="Items">
+          <File Name="Resources/Scripts/Items/RustyKey.lua"/>
+          <File Name="Resources/Scripts/Items/WornShield.lua"/>
+          <File Name="Resources/Scripts/Items/CellNote.lua"/>
+          <File Name="Resources/Scripts/Items/RustyDagger.lua"/>
+          <File Name="Resources/Scripts/Items/WornSword.lua"/>
+          <File Name="Resources/Scripts/Items/PrisonIronKey.lua"/>
+          <File Name="Resources/Scripts/Items/HealingPotion.lua"/>
+          <File Name="Resources/Scripts/Items/CellKey.lua"/>
+          <File Name="Resources/Scripts/Items/BurningSpear.lua"/>
+          <File Name="Resources/Scripts/Items/DwarvenAleKeg.lua"/>
+          <File Name="Resources/Scripts/Items/ThunderAxe.lua"/>
+          <File Name="Resources/Scripts/Items/DwarvenAxe.lua"/>
+          <File Name="Resources/Scripts/Items/Torch.lua"/>
+          <File Name="Resources/Scripts/Items/ColdShield.lua"/>
+          <File Name="Resources/Scripts/Items/VitalityPotion.lua"/>
+          <File Name="Resources/Scripts/Items/MagicPrisonKey.lua"/>
+          <File Name="Resources/Scripts/Items/SparkyDagger.lua"/>
+        </VirtualDirectory>
+        <File Name="Resources/Scripts/Constants.lua"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+  <Settings Type="Executable">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall -ansi -pedantic" Required="yes" PreCompiledHeader="">
+        <IncludePath Value="."/>
+        <IncludePath Value="/usr/include/lua5.1"/>
+      </Compiler>
+      <Linker Options="" Required="yes">
+        <Library Value="SDL"/>
+        <Library Value="SDL_image"/>
+        <Library Value="SDL_mixer"/>
+        <Library Value="GL"/>
+        <Library Value="GLU"/>
+        <Library Value="lua5.1"/>
+        <Library Value="tolua++5.1"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="." Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2 -Wall -ansi -pedantic" Required="yes" PreCompiledHeader="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes">
+        <Library Value="SDL"/>
+        <Library Value="SDL_image"/>
+        <Library Value="SDL_mixer"/>
+        <Library Value="GL"/>
+        <Library Value="GLU"/>
+        <Library Value="lua5.1"/>
+        <Library Value="tolua++5.1"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="." Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;"/>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+    </Configuration>
+    <GlobalSettings>
+      <Compiler Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+  </Settings>
+</CodeLite_Project>

@@ -1,0 +1,31 @@
+#!/bin/sh
+
+tolua++5.1 -n Attack -H tolua_Attack.h Attack.h
+tolua++5.1 -n Attack -o tolua_Attack.cpp Attack.h
+
+tolua++5.1 -n Defense -H tolua_Defense.h Defense.h
+tolua++5.1 -n Defense -o tolua_Defense.cpp Defense.h
+
+tolua++5.1 -n DoorTile -H tolua_DoorTile.h DoorTile.h
+tolua++5.1 -n DoorTile -o tolua_DoorTile.cpp DoorTile.h
+
+tolua++5.1 -n HoleTile -H tolua_HoleTile.h HoleTile.h
+tolua++5.1 -n HoleTile -o tolua_HoleTile.cpp HoleTile.h
+
+tolua++5.1 -n Item -H tolua_Item.h Item.h
+tolua++5.1 -n Item -o tolua_Item.cpp Item.h
+
+tolua++5.1 -n Monster -H tolua_Monster.h Monster.h
+tolua++5.1 -n Monster -o tolua_Monster.cpp Monster.h
+
+tolua++5.1 -n Map -H tolua_Map.h Map.h
+tolua++5.1 -n Map -o tolua_Map.cpp Map.h
+
+tolua++5.1 -n Player -H tolua_Player.h Player.h
+tolua++5.1 -n Player -o tolua_Player.cpp Player.h
+
+tolua++5.1 -n PressurePlateTile -H tolua_PressurePlateTile.h PressurePlateTile.h
+tolua++5.1 -n PressurePlateTile -o tolua_PressurePlateTile.cpp PressurePlateTile.h
+
+tolua++5.1 -n GameController -H tolua_GameController.h GameController.h
+tolua++5.1 -n GameController -o tolua_GameController.cpp GameController.h
